@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+# E501: long lines in test data and user-facing messages are fine.
+# B008: FastAPI's File(...) default is the framework's documented idiom.
+ignore = ["E501", "B008"]

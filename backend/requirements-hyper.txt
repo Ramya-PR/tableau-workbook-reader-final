@@ -1,0 +1,4 @@
+# Optional: enables row preview for .hyper extracts.
+# Platform-specific wheels; if this fails to install, everything else still works
+# (metadata parsing, CSV preview) and the UI explains that .hyper preview is off.
+tableauhyperapi>=0.0.19000
